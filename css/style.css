@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: rgb(158, 172, 197);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.card {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-top: 3px solid rgba(17, 101, 139, 0.52);
+}
+
+.card-title{
+    padding: 10px;
+}
+
+.card-title h1{
+    font-weight: 400;
+    margin: 0;
+}
+
+.card .card-body{
+    line-height: 1.8;
+    padding: 10px;
+}
+
+@media(orientation: landscape){
+    .card{
+        width: 49%;
+    }
+}
+
+@media(orientation: portrait){
+    body{
+        background: rgba(180, 71, 176, 0.746);
+    }
+
+    .container{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .card{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
